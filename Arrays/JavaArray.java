@@ -76,6 +76,10 @@ public class JavaArray {
     public static void delete(){
         System.out.println("Enter the pos to delete");
         int pos = sc.nextInt();
+        if (size == 0) {
+            System.out.println("error");
+            return;
+        }
         for (int i = pos; i < size; i++) {
             arr[i] = arr[i+1];
         } 
